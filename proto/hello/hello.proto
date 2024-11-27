@@ -1,0 +1,13 @@
+syntax = "proto3";
+
+package hello;
+
+option go_package = "github.com/cytommi/grpc_timeouts/hello";
+
+service Hello {
+  rpc Ping(PingReq) returns (PingRes);
+}
+
+message PingReq {}
+
+message PingRes {}
